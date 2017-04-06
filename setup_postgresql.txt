@@ -1,0 +1,9 @@
+Download: https://www.enterprisedb.com/download-postgresql-binaries
+Initialize dir to database: C:\pgsql>initdb -D /pgsql/data
+Start server: C:\pgsql>bin\pg_ctl -D data start
+(In another CMD-prompt)Start client: C:\pgsql\bin>psql.exe -U postgres
+Create database: CREATE DATABASE tka_2017b OWNER postgres;
+Connect database: \connect tka_2017b
+Check where you are:  SELECT current_database();
+List tables: \dt
+Quit: \q
