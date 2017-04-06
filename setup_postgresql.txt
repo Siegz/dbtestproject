@@ -7,3 +7,4 @@ Connect database: \connect tka_2017b
 Check where you are:  SELECT current_database();
 List tables: \dt
 Quit: \q
+run http://localhost/project to add project to database by JSON like {"name":"myProject"}
