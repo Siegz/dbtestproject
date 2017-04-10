@@ -42,22 +42,7 @@
 			<groupId>org.eclipse.persistence</groupId>
 			<artifactId>eclipselink</artifactId>
 			<version>2.5.0-RC1</version>
-		</dependency>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-		</dependency>
-		<dependency>
-		  <groupId>org.apache.httpcomponents</groupId>
-		  <artifactId>httpclient</artifactId>
-		  <version>4.5.3</version>
-		</dependency>
-		<dependency>
-		        <groupId>com.google.code.gson</groupId>
-		        <artifactId>gson</artifactId>
-		        <version>2.1</version>
-		        <scope>provided</scope>
-		</dependency>			    
+		</dependency>		    
         <!-- swagger for REST documentation -->
 		<dependency>
 		    <groupId>io.springfox</groupId>
@@ -68,10 +53,8 @@
 		    <groupId>io.springfox</groupId>
 		    <artifactId>springfox-swagger-ui</artifactId>
 		    <version>2.4.0</version>
-		</dependency>		   
-        
+		</dependency>		        
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
