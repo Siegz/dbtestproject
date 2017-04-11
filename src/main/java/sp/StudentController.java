@@ -35,7 +35,7 @@ public class StudentController {
     	return repository.findOne(id);
     }    
     
-    @RequestMapping("/test")
+    @RequestMapping(value ="/test", method = RequestMethod.GET)
     public String test(@RequestParam(value="name", defaultValue="World") String name) {
         return "{\"id\":\"hello\"}";
     } 
