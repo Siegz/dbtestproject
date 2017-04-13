@@ -33,11 +33,11 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `tka_2017b`.`student` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NULL,
-  `taks_id` INT NOT NULL,
+  `project_id` INT NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `fk_student_taks_idx` (`taks_id` ASC),
-  CONSTRAINT `fk_student_taks`
-    FOREIGN KEY (`taks_id`)
+  INDEX `fk_student_project_idx` (`project_id` ASC),
+  CONSTRAINT `fk_student_project`
+    FOREIGN KEY (`project_id`)
     REFERENCES `tka_2017b`.`project` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
