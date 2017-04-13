@@ -21,7 +21,7 @@ public class Student implements Serializable {
 
 	//bi-directional many-to-one association to Project
 	@ManyToOne(cascade={CascadeType.ALL})
-	@JoinColumn(name="taks_id")
+	@JoinColumn(name="project_id")
 	private Project project;
 
 	public Student() {
