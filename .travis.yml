@@ -10,9 +10,9 @@ before_script:
   - sudo /etc/init.d/mysql start
     
 before_install:
-  - sudo mysql -e 'CREATE DATABASE tka_2017b;'
+  - sudo mysql -e 'CREATE DATABASE e1401159_herodb;'
 deploy:
  provider: heroku
  api-key: 
-  secure: $HEROKU_API_KEY
- app: spexample
+  secure: 9b52a29f-2339-4f39-aa56-825a25245f54
+ app: dbtestprojecthero
